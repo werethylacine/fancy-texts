@@ -1,0 +1,121 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+
+}
+.glow-pulse {
+  background-color: #000;
+  color: #fff;
+  font-size: 4em;
+  animation: glow-pulse-blur 1s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff;
+  border-bottom: 1px solid #aaa;
+}
+
+.anaglyph {
+  background-color: #000;
+  color: transparent;
+  font-size: 4em;
+}
+
+.clipped-text {
+  background-color: #000;
+  color: transparent;
+  font-size: 4em;
+  background: url("https://s-media-cache-ak0.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif");
+ -webkit-background-clip: text;
+}
+
+.credit {
+  background-image: url("https://goingflaneur.files.wordpress.com/2016/10/img_2535.jpg");
+  font-size: 2em;
+  margin: auto;
+}
+
+.contrastcircle {
+  width: 19em;
+  height: 19em;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  mix-blend-mode: screen;
+}
+
+.forward {
+  animation: forward-shadow-slide 5s ease-in-out infinite;
+}
+.flat {
+  text-shadow: 1px 1px 0px rgba(0, 255, 255, .8), -1px -1px 0px rgba(255, 0, 0, .8);
+}
+.backward {
+  animation: backward-shadow-slide 5s ease-in-out infinite;
+}
+
+@keyframes forward-shadow-slide {
+  0%, 100% {
+  text-shadow: 5px 1px 0px rgba(0, 255, 255, .8), -5px 0px 0px rgba(255, 0, 0, .8);
+  }
+  50% {
+  text-shadow: -5px 1px 0px rgba(0, 255, 255, .8), 5px 0px 0px rgba(255, 0, 0, .8);
+  }
+}
+
+@keyframes backward-shadow-slide {
+  50% {
+  text-shadow: 5px 1px 0px rgba(0, 255, 255, .8), -5px 0px 0px rgba(255, 0, 0, .8);
+  }
+  0%, 100% {
+  text-shadow: -5px 1px 0px rgba(0, 255, 255, .8), 5px 0px 0px rgba(255, 0, 0, .8);
+  }
+}
+
+p {
+  padding: 0px 100px 0px 100px;
+  margin: auto;
+  text-transform: uppercase;
+}
+.glow-pulse p {
+  font-family: 'Audiowide', cursive;
+}
+.anaglyph p {
+  font-family: 'Gruppo', cursive;
+}
+.clipped-text p {
+  font-family: 'Audiowide', cursive;
+}
+
+.credit p {
+  color: white;
+  font-family: 'Gruppo', cursive;
+}
+
+@keyframes glow-pulse-blur {
+  from {
+    text-shadow: 0px 0px 10px #fff,
+    0px 0px 10px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 50px #fff,
+    0px 0px 50px #fff,
+    0px 0px 50px #7B96B8,
+    0px 0px 150px #fff,
+    0px 10px 100px #7B96B8,
+    0px 10px 100px #7B96B8,
+    0px -10px 100px #7B96B8,
+    0px -10px 100px #7B96B8;}
+  }
+}
